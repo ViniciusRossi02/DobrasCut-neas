@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobras Cutâneas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Calcule aqui suas Dobras Cutâneas</h2>
+    </header>
+
+    <section>
+        <div>
+            <p>Coloque aqui sua idade:
+                <input type="text" name="idade" id="txtidade">
+            </p>
+
+            <p>Escreva aqui seu nome:
+                <input type="text" name="nome" id="txtname">
+            </p>
+            <br>
+
+            <p id="preencha">
+                AGORA PREENCHA COM SEUS DADOS
+            </p>
+            <br>
+
+            <p>Sexo
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="nasc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <br>
+
+            <p> Informe a dobra cutanea do seu trícps:
+                <input type="number" name="dobratri" id="txttri" min="0">
+            </p>
+
+            <p> Informe a dobra cutanea subescapular:
+                <input type="number" name="escapula" id="txtesca" min="0">
+            </p>
+
+            <p> Informe a dobra cutanea do peitoral:
+                <input type="number" name="peitoral" id="txtpeito" min="0">
+            </p>
+
+            <p> Informe a dobra cutanea axilar:
+                <input type="number" name="axilar" id="txtaxilar" min="0">
+            </p>
+
+            <p> Informe a dobra cutanea abdominal:
+                <input type="number" name="abdominal" id="txtabdominal" min="0">
+            </p>
+
+            <p> Informe a dobra cutanea suprailiaca:
+                <input type="number" name="suprailiaca" id="txtsupra" min="0">
+            </p>
+
+            <p> Informe a dobra cutanea coxa:
+                <input type="number" name="coxa" id="txtcoxa" min="0">
+            </p>
+
+            <p>
+                <input class="botao" type="button" value="calcular" onclick="calcular()">
+            </p>
+
+
+        </div>
+    </section>
+    
+    <p id="resultado"> </p>
+    <p id="indice"></p>
+    <img id="tabela" src="https://endocrinosaude.com/wordpress/wp-content/uploads/2011/08/faixas_de_gordura.png" alt="tabela">
+    <script src="script.js"></script>
+</body>
+
+</html>
